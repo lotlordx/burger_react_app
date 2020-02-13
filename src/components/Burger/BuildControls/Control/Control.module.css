@@ -1,0 +1,64 @@
+.Control{
+    border: 1px solid #575757;
+    color: #c5c5c5;
+    text-align: center;
+    font-style: inherit;
+    margin: auto;
+    margin-top: 5px;
+    padding: 10px;
+    width: 50%;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    border-radius: 0px 5px 0px 5px;
+    box-shadow: 2px 2px 2px 0px #535252;
+    justify-content: space-between;  
+
+}
+
+.Control .Title {
+    float: left;
+    width: 35%;
+
+}
+
+.Control .Count {
+    float: left;
+    width: 35%;
+}
+
+.Control button {
+    margin: 2px;
+    width: 50px;
+    border: 1px solid #535252;
+    background-color: #61606083;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.Control button.Add {
+    background-color: rgb(25, 10, 153);
+    color: white;
+    font-size: 0.8rem;
+    font-weight: bolder;
+}
+
+.Control button.Remove {
+    background-color: rgb(173, 5, 5);
+    color: white;
+    font-size: 0.8rem;
+    font-weight: bolder;
+}
+
+@media screen and (min-width: 300px) and (min-height: 700px) {
+    .Control{
+        width: 95%
+    }
+}
+
+@media screen and (min-width: 500px) and (min-height: 700px) {
+    .Control{
+        width: 400px
+    }
+}
+
