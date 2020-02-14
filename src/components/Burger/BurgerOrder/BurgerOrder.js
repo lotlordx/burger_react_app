@@ -9,7 +9,7 @@ const burgerOrder = (props) => {
             Total price order : ${props.totalPrice.toFixed(2)}
          </div>
          <div>
-             <button className={styles.Proceed}>proceed</button>
+             <button className={styles.Proceed}>proceed to checkout</button>
          </div>
       </div>
    );

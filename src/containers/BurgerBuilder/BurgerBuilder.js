@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import Aux from "../../hoc/Aux";
 import Burger from "../../components/Burger/Burger";
 import BuildControls from "../../components/Burger/BuildControls/BuildControls";
-import BurgerOrder from "../../components/Burger/BurgerOrder/BurgerOrder";
 import PRICES from "../../constants/ingredientPrices";
 
 class BurgerBuilder extends Component {
@@ -20,9 +19,6 @@ class BurgerBuilder extends Component {
     let ingredients = { ...this.state.ingredients };
     ingredients[key] = ingredients[key] + 1;
     let newprice = this.state.totalPrice + PRICES[key];
-    console.log(PRICES[key]);
-
-    console.log(newprice, "increase");
     this.setState({
       ingredients: ingredients,
       totalPrice: newprice
