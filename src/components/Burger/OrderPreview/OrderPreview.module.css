@@ -1,22 +1,47 @@
-.OrderPreview{
-    display: block;
-    width: auto;
-    height: auto;
-    margin: 10px;
+.OrderPreview {
+  display: block;
+  width: auto;
+  height: auto;
+  margin: 10px;
 }
 
-.OrderPreview .TextTitle{
-    text-transform: uppercase;
-    text-align: center;
-    font-style: inherit;
-    color: black;
-    padding-top: 10px;
+.OrderPreview .TextTitle {
+  text-transform: uppercase;
+  text-align: center;
+  font-style: inherit;
+  color: black;
+  padding-top: 10px;
 }
 
-.OrderPreview .Items{
-    text-align: left;
-    font-style: inherit;
-    color: black;
-    padding-top: 10px;
-    padding-left: 10px;
+.OrderPreview .Items {
+  text-align: left;
+  font-style: inherit;
+  color: black;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.OrderPreview .TotalCost {
+  text-align: left;
+  font-style: inherit;
+  color: black;
+  padding-top: 10px;
+  padding-left: 30px;
+}
+
+.OrderPreview .Confirm {
+  text-align: center;
+  font-style: inherit;
+  color: black;
+  padding-top: 10px;
+  padding-left: 30px;
+}
+
+.OrderPreview .Confirm button {
+  background-color: green;
+  width: 500px;
+  padding: 10px 10px;
+  margin-top: 20px;
+  color: white;
+
 }

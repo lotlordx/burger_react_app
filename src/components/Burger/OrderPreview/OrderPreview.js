@@ -19,6 +19,15 @@ const orderPreview = props => {
       <div className={styles.Items}>
         <ul>{itemsOrdered}</ul>
       </div>
+      <div className={styles.TotalCost}>
+        -------------------------------
+        <br />
+        Total Cost = ${props.totalCost.toFixed(2)} <br />
+        -------------------------------
+      </div>
+      <div className={styles.Confirm}>
+        <button>Confirm Purchase</button>
+      </div>
     </div>
   );
 };
