@@ -22,8 +22,8 @@
 
 }
 
-.BurgerOrder .Proceed {
-    width: 45%
+.BurgerOrder button.Proceed {
+   border: 1px solid rgb(139, 161, 139);
 }
 
 @media screen and (min-width: 300px) and (min-height: 700px) {
