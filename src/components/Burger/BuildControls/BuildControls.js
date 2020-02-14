@@ -24,7 +24,7 @@ const buildControls = props => {
     <Aux>
       <div>{itemsToBeBuilt}</div>
       <div>
-        <BurgerOrder totalPrice={props.totalPrice} />
+        <BurgerOrder showModal={props.showModal} totalPrice={props.totalPrice} />
       </div>
     </Aux>
   );

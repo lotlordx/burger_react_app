@@ -1,0 +1,22 @@
+.OrderPreview{
+    display: block;
+    width: auto;
+    height: auto;
+    margin: 10px;
+}
+
+.OrderPreview .TextTitle{
+    text-transform: uppercase;
+    text-align: center;
+    font-style: inherit;
+    color: black;
+    padding-top: 10px;
+}
+
+.OrderPreview .Items{
+    text-align: left;
+    font-style: inherit;
+    color: black;
+    padding-top: 10px;
+    padding-left: 10px;
+}

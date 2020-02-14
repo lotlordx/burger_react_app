@@ -3,6 +3,8 @@ import Aux from "../../hoc/Aux";
 import Burger from "../../components/Burger/Burger";
 import BuildControls from "../../components/Burger/BuildControls/BuildControls";
 import PRICES from "../../constants/ingredientPrices";
+import Modal from "../../components/UI/Modal/Modal";
+import OrderPreview from "../../components/Burger/OrderPreview/OrderPreview";
 
 class BurgerBuilder extends Component {
   state = {
@@ -12,7 +14,8 @@ class BurgerBuilder extends Component {
       bacon: 0,
       cheese: 0
     },
-    totalPrice: 0
+    totalPrice: 0,
+    showModal: true
   };
 
   increaseIngredient = key => {
@@ -59,9 +62,25 @@ class BurgerBuilder extends Component {
     });
   };
 
+
+  previewModal = () => {
+    this.setState({
+      showModal: true
+    })
+  }
+
+  closeModal = () => {
+    this.setState({
+      showModal: false
+    })
+  }
+
   render() {
     return (
       <Aux>
+        <Modal showModal={this.state.showModal} close={this.closeModal}>
+          <OrderPreview items={this.state.ingredients} />
+        </Modal>
         <div>
           <Burger ingredients={this.state.ingredients} />
         </div>
@@ -73,6 +92,7 @@ class BurgerBuilder extends Component {
             changed={this.onChangeIngredient}
             prices={PRICES}
             totalPrice={this.state.totalPrice}
+            showModal={this.previewModal}
           />
         </div>
         <div></div>
