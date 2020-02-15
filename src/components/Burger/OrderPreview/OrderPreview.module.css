@@ -24,6 +24,7 @@
 .OrderPreview .TotalCost {
   text-align: left;
   font-style: inherit;
+  width: 90%;
   color: black;
   padding-top: 10px;
   padding-left: 30px;
@@ -39,9 +40,14 @@
 
 .OrderPreview .Confirm button {
   background-color: green;
-  width: 500px;
+  width: 80%;
   padding: 10px 10px;
   margin-top: 20px;
   color: white;
 
 }
+
+.OrderPreview .Confirm button:hover {
+    background-color: rgb(100, 255, 100);
+  
+  }

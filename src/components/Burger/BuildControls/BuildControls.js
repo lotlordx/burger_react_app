@@ -1,6 +1,6 @@
 import React from "react";
 import Control from "./Control/Control";
-import Aux from "../../../hoc/Aux";
+import Aux from "../../../hoc/Aux/Aux";
 import BurgerOrder from "../BurgerOrder/BurgerOrder";
 
 const buildControls = props => {
